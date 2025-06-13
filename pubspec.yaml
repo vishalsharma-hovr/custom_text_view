@@ -1,6 +1,7 @@
 name: custom_text_view
 description: A customizable TextView widget for Flutter with font styling, padding, and layout support.
 version: 1.0.0
+license: MIT
 homepage: https://github.com/vishalsharma-hovr/custom_text_view
 repository: https://github.com/vishalsharma-hovr/custom_text_view
 issue_tracker: https://github.com/vishalsharma-hovr/custom_text_view/issues
