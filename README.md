@@ -25,13 +25,15 @@ dependencies:
   custom_text_view: ^1.0.0
 ```
 
+
+
 - flutter pub get
 
 - import 'package:custom_text_view/custom_text_view.dart';
 
 
 - Example
-
+  ````
   TextViewWidget(
   text: "Welcome to custom_text_view!",
   fontSize: 16,
@@ -48,7 +50,7 @@ dependencies:
   letterSpacing: 1.2,
   lineHeight: 1.5,
   )
-
+````
   | Parameter           | Type            | Default           | Description                  |
   | ------------------- | --------------- | ----------------- | ---------------------------- |
   | `text`              | `String`        | *(required)*      | The main text to display     |
