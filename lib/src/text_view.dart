@@ -1,6 +1,6 @@
 part of '../custom_text_view.dart';
 
-class HovrTextViewWidget extends StatelessWidget {
+class TextViewWidget extends StatelessWidget {
   final Color textColor;
   final FontWeight fontWeight;
   final String? fontFamily;
@@ -16,7 +16,7 @@ class HovrTextViewWidget extends StatelessWidget {
   final FontStyle? fontStyle;
   final double? lineHeight;
 
-  const HovrTextViewWidget({
+  const TextViewWidget({
     super.key,
     this.sizedBoxWidth,
     this.sizedBoxHeight,

@@ -1,3 +1,4 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+- Initial release of `TextViewWidget`.
+- Supports text styling, padding, fixed dimensions, and overflow handling.
