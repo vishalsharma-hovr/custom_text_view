@@ -15,24 +15,27 @@ class TextViewWidget extends StatelessWidget {
   final double? sizedBoxHeight;
   final FontStyle? fontStyle;
   final double? lineHeight;
+  final TextDecoration textDecoration;
+  final List<FontVariation>? fontVariation;
 
-  const TextViewWidget({
-    super.key,
-    this.sizedBoxWidth,
-    this.sizedBoxHeight,
-    required this.text,
-    this.fontStyle,
-    this.paddingEdgeInsets = EdgeInsets.zero,
-    this.textColor = Colors.black,
-    this.fontFamily,
-    this.fontSize = 14,
-    this.fontWeight = FontWeight.w700,
-    this.overflow,
-    this.letterSpacing,
-    this.textAlign,
-    this.maxLines,
-    this.lineHeight,
-  });
+  const TextViewWidget(
+      {super.key,
+      this.sizedBoxWidth,
+      this.sizedBoxHeight,
+      required this.text,
+      this.fontStyle,
+      this.paddingEdgeInsets = EdgeInsets.zero,
+      this.textColor = Colors.black,
+      this.fontFamily,
+      this.fontSize = 14,
+      this.fontWeight = FontWeight.w700,
+      this.overflow,
+      this.letterSpacing,
+      this.textAlign,
+      this.maxLines,
+      this.lineHeight,
+      this.textDecoration = TextDecoration.none,
+      this.fontVariation}); //const [ui.FontVariation('wght', 620)],
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +49,8 @@ class TextViewWidget extends StatelessWidget {
           maxLines: maxLines,
           textAlign: textAlign,
           style: TextStyle(
+            fontVariations: fontVariation,
+            decoration: textDecoration,
             overflow: overflow,
             color: textColor,
             fontSize: fontSize,
