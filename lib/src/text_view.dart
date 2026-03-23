@@ -50,6 +50,7 @@ class TextViewWidget extends StatelessWidget {
           textAlign: textAlign,
           style: TextStyle(
             fontVariations: fontVariation,
+            textScaleFactor: 1.0,
             decoration: textDecoration,
             overflow: overflow,
             color: textColor,
