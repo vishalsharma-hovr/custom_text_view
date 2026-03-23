@@ -48,9 +48,9 @@ class TextViewWidget extends StatelessWidget {
           text,
           maxLines: maxLines,
           textAlign: textAlign,
+          textScaleFactor: 1.0,
           style: TextStyle(
             fontVariations: fontVariation,
-            textScaleFactor: 1.0,
             decoration: textDecoration,
             overflow: overflow,
             color: textColor,
