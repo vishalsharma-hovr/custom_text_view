@@ -39,7 +39,7 @@ class TextViewWidget extends StatelessWidget {
       this.textDecoration = TextDecoration.none,
       this.fontVariation,
       this.textDecorationColor,
-      this.textDecorationThickness); //const [ui.FontVariation('wght', 620)],
+      this.textDecorationThickness}); //const [ui.FontVariation('wght', 620)],
 
   @override
   Widget build(BuildContext context) {
