@@ -17,6 +17,8 @@ class TextViewWidget extends StatelessWidget {
   final double? lineHeight;
   final TextDecoration textDecoration;
   final List<FontVariation>? fontVariation;
+  final Color? textDecorationColor;
+  final int textDecorationThickness;
 
   const TextViewWidget(
       {super.key,
@@ -35,7 +37,9 @@ class TextViewWidget extends StatelessWidget {
       this.maxLines,
       this.lineHeight,
       this.textDecoration = TextDecoration.none,
-      this.fontVariation}); //const [ui.FontVariation('wght', 620)],
+      this.fontVariation,
+      this.textDecorationColor,
+      this.textDecorationThickness); //const [ui.FontVariation('wght', 620)],
 
   @override
   Widget build(BuildContext context) {
@@ -50,17 +54,19 @@ class TextViewWidget extends StatelessWidget {
           textAlign: textAlign,
           textScaleFactor: 1.0,
           style: TextStyle(
-            fontVariations: fontVariation,
-            decoration: textDecoration,
-            overflow: overflow,
-            color: textColor,
-            fontSize: fontSize,
-            fontWeight: fontWeight,
-            fontFamily: fontFamily,
-            fontStyle: fontStyle,
-            letterSpacing: letterSpacing,
-            height: lineHeight, // This corresponds to line-height of 24px (24px * 1.0)
-          ),
+              fontVariations: fontVariation,
+              decoration: textDecoration,
+              overflow: overflow,
+              color: textColor,
+              fontSize: fontSize,
+              fontWeight: fontWeight,
+              fontFamily: fontFamily,
+              fontStyle: fontStyle,
+              letterSpacing: letterSpacing,
+              height: lineHeight, // This corresponds to line-height of 24px (24px * 1.0)
+              decorationColor: textDecorationColor,
+              decorationThickness: textDecorationThickness
+              ),
         ),
       ),
     );
