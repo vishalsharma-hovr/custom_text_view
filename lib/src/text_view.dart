@@ -18,7 +18,7 @@ class TextViewWidget extends StatelessWidget {
   final TextDecoration textDecoration;
   final List<FontVariation>? fontVariation;
   final Color? textDecorationColor;
-  final int textDecorationThickness;
+  final int? textDecorationThickness;
 
   const TextViewWidget(
       {super.key,
